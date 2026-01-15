@@ -1,7 +1,7 @@
-// Mock data for Museu do Legado
+// Mock data for Museu dos Legados
 
 export const heroData = {
-  title: "Museu do Legado",
+  title: "Museu dos Legados",
   subtitle: "A Arte de contar histórias geracionais através de Experiências Imersivas Sensoriais",
   backgroundImage: "https://images.unsplash.com/photo-1491156855053-9cdff72c7f85?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxtdXNldW0lMjBpbnRlcmlvcnxlbnwwfHx8fDE3Njg0MzMxMzZ8MA&ixlib=rb-4.1.0&q=85"
 };
@@ -10,7 +10,7 @@ export const aboutData = {
   title: "Sobre o Museu",
   image: "https://images.unsplash.com/photo-1758413354881-3499004c0b8d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2ODQzMzE0Mnww&ixlib=rb-4.1.0&q=85",
   description: [
-    "O Museu do Legado é um espaço cultural dedicado à preservação e celebração das histórias geracionais que moldaram nossa sociedade. Através de experiências imersivas e sensoriais, conectamos o passado ao presente, criando pontes entre gerações.",
+    "O Museu dos Legados é um espaço cultural dedicado à preservação e celebração das histórias geracionais que moldaram nossa sociedade. Através de experiências imersivas e sensoriais, conectamos o passado ao presente, criando pontes entre gerações.",
     "Nossa missão é transformar a forma como as pessoas se conectam com a história e a cultura, proporcionando experiências que vão além da observação tradicional. Cada exposição é cuidadosamente elaborada para estimular todos os sentidos e criar memórias duradouras.",
     "Fundado em 2016, o museu já recebeu mais de 50 mil visitantes e se tornou referência em museologia interativa no Brasil, oferecendo mais de 500 obras em nossa coleção permanente e temporária."
   ],
@@ -158,53 +158,20 @@ export const eventsData = {
   events: [
     {
       id: 1,
-      date: "15",
-      month: "FEV",
+      date: "16",
+      month: "JAN",
       year: "2026",
-      title: "Exposição: Memórias do Brasil Colonial",
-      time: "14h - 18h",
-      location: "Galeria Principal",
+      title: "Estreia do Museu dos Legados",
+      time: "13:30 - 17:30",
+      location: "Instituto Caldeira - Sala Multiuso",
       image: "https://images.unsplash.com/photo-1562064729-6c3f058785fd?crop=entropy&cs=srgb&fm=jpg&q=85",
-      description: "Abertura da nova exposição permanente que explora a riqueza cultural do período colonial brasileiro através de artefatos, pinturas e instalações interativas."
-    },
-    {
-      id: 2,
-      date: "22",
-      month: "FEV",
-      year: "2026",
-      title: "Workshop: Técnicas de Pintura Clássica",
-      time: "10h - 16h",
-      location: "Ateliê do Museu",
-      image: "https://images.unsplash.com/photo-1724877595167-d741c5d58183?crop=entropy&cs=srgb&fm=jpg&q=85",
-      description: "Aprenda técnicas tradicionais de pintura com artistas renomados. Vagas limitadas, inscrições abertas."
-    },
-    {
-      id: 3,
-      date: "08",
-      month: "MAR",
-      year: "2026",
-      title: "Noite Cultural: Música e Arte",
-      time: "19h - 22h",
-      location: "Auditório e Jardins",
-      image: "https://images.unsplash.com/photo-1761124739660-c2410c5d917c?crop=entropy&cs=srgb&fm=jpg&q=85",
-      description: "Apresentações musicais ao vivo, performances artísticas e visitação noturna especial às galerias. Evento gratuito para toda a família."
-    },
-    {
-      id: 4,
-      date: "20",
-      month: "MAR",
-      year: "2026",
-      title: "Palestra: Preservação de Patrimônio Cultural",
-      time: "15h - 17h",
-      location: "Sala de Conferências",
-      image: "https://images.unsplash.com/photo-1716726319178-6d60f2b027f4?crop=entropy&cs=srgb&fm=jpg&q=85",
-      description: "Especialistas nacionais e internacionais discutem os desafios e inovações na preservação do patrimônio cultural brasileiro."
+      description: "Grande estreia do Museu dos Legados. Venha participar do início desta jornada de preservação e celebração das histórias geracionais."
     }
   ]
 };
 
 export const instagramData = {
-  handle: "@museulegado",
+  handle: "@museudolegado.rs",
   followers: "12.5k",
   posts: [
     {
@@ -280,7 +247,7 @@ export const practicalInfoData = {
     {
       icon: "map-pin",
       title: "Localização",
-      content: "Rua da Cultura, 500\nCentro Histórico\nSão Paulo - SP"
+      content: "Centro Histórico\nPorto Alegre - RS"
     },
     {
       icon: "info",
@@ -288,7 +255,7 @@ export const practicalInfoData = {
       content: "Proibido flash\nSilêncio nas galerias\nGuarde pertences nos armários"
     }
   ],
-  mapUrl: "https://maps.google.com/maps?q=Museu%20do%20Ipiranga%20S%C3%A3o%20Paulo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+  mapUrl: "https://maps.google.com/maps?q=Centro%20Hist%C3%B3rico%20Porto%20Alegre&t=&z=15&ie=UTF8&iwloc=&output=embed"
 };
 
 export const contactData = {

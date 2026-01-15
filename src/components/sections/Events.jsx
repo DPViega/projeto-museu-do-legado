@@ -30,6 +30,9 @@ const Events = () => {
                                         />
                                         <div className="p-6">
                                             <div className="text-secondary dark:text-blue-300 text-sm font-semibold mb-2">
+                                                <span className="md:hidden mr-2 bg-gray-100 dark:bg-slate-600 px-2 py-1 rounded text-primary dark:text-white">
+                                                    {event.date} {event.month}
+                                                </span>
                                                 {event.time} • {event.location}
                                             </div>
                                             <h3 className="text-xl font-bold text-dark dark:text-white mb-2" style={{ fontFamily: 'var(--font-display)' }}>
@@ -56,11 +59,6 @@ const Events = () => {
                     ))}
                 </div>
 
-                <div className="text-center mt-12 fade-in-up">
-                    <button className="btn-outlined">
-                        Ver Agenda Completa
-                    </button>
-                </div>
             </div>
         </section>
     );

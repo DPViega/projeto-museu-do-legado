@@ -35,9 +35,11 @@ const Header = ({ headerScrolled, theme, toggleTheme }) => {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <div className="flex items-center">
-                        <h1 className="text-2xl font-bold text-primary" style={{ fontFamily: 'var(--font-display)' }}>
-                            Museu do Legado
-                        </h1>
+                        <img
+                            src="/logo.png"
+                            alt="Museu dos Legados"
+                            className="h-14 w-auto object-contain hover:opacity-90 transition-opacity"
+                        />
                     </div>
 
                     {/* Desktop Navigation */}
@@ -65,17 +67,16 @@ const Header = ({ headerScrolled, theme, toggleTheme }) => {
 
                         {/* Instagram Button */}
                         <button
-                            onClick={() => window.open('https://instagram.com', '_blank')}
+                            onClick={() => window.open('https://www.instagram.com/museudolegado.rs', '_blank')}
                             className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 text-white hover:scale-110 transition-transform instagram-pulse"
                         >
                             <Instagram size={24} />
                         </button>
                     </div>
 
-                    {/* Mobile Menu Button */}
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        className="md:hidden p-2 text-gray-700"
+                        className="md:hidden p-2 text-gray-700 dark:text-gray-200 transition-colors"
                     >
                         {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                     </button>
@@ -84,24 +85,38 @@ const Header = ({ headerScrolled, theme, toggleTheme }) => {
 
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div className="md:hidden bg-white border-t border-gray-200">
+                <div className="md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 absolute top-20 left-0 right-0 shadow-lg fade-in-up">
                     <nav className="flex flex-col p-4 space-y-4">
                         {['inicio', 'sobre', 'experiencias', 'colecoes', 'eventos', 'contato'].map((section) => (
                             <button
                                 key={section}
                                 onClick={() => handleNavClick(section)}
-                                className="nav-link text-left py-2 text-gray-700 hover:text-primary transition-colors"
+                                className="nav-link text-left py-2 text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors"
                             >
                                 {section.charAt(0).toUpperCase() + section.slice(1)}
                             </button>
                         ))}
-                        <button
-                            onClick={() => window.open('https://instagram.com', '_blank')}
-                            className="flex items-center space-x-2 py-2 text-gray-700 hover:text-primary transition-colors"
-                        >
-                            <Instagram size={20} />
-                            <span className="nav-link">Instagram</span>
-                        </button>
+
+                        <div className="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-slate-800">
+                            <button
+                                onClick={() => window.open('https://www.instagram.com/museudolegado.rs', '_blank')}
+                                className="flex items-center space-x-2 py-2 text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors"
+                            >
+                                <Instagram size={20} />
+                                <span className="nav-link">Instagram</span>
+                            </button>
+
+                            <button
+                                onClick={() => {
+                                    toggleTheme();
+                                    setMobileMenuOpen(false);
+                                }}
+                                className="flex items-center space-x-2 py-2 text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors"
+                            >
+                                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+                                <span className="nav-link">{theme === 'dark' ? 'Modo Claro' : 'Modo Escuro'}</span>
+                            </button>
+                        </div>
                     </nav>
                 </div>
             )}

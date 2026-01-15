@@ -23,7 +23,7 @@ const Experiences = ({ onExperienceClick }) => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {experiencesData.experiences.map((experience, index) => (
                         <div
                             key={experience.id}

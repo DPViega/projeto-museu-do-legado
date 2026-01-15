@@ -1,10 +1,10 @@
-# Museu do Legado
+# Museu dos Legados
 
-**Museu do Legado** é uma aplicação web interativa dedicada a preservar histórias geracionais através de experiências culturais imersivas. O projeto apresenta um design moderno, responsivo e rico em animações, oferecendo aos visitantes uma prévia digital do acervo e das atividades do museu.
+**Museu dos Legados** é uma aplicação web interativa dedicada a preservar histórias geracionais através de experiências culturais imersivas. O projeto apresenta um design moderno, responsivo e rico em animações, oferecendo aos visitantes uma prévia digital do acervo e das atividades do museu.
 
 ## 📖 Sobre o Projeto
 
-Este site serve como a vitrine digital para o Museu do Legado. Ele foi desenvolvido com foco em uma experiência de usuário fluida e visualmente impactante, permitindo aos usuários explorar coleções, verificar a programação de eventos e obter informações práticas de visitação.
+Este site serve como a vitrine digital para o Museu dos Legados. Ele foi desenvolvido com foco em uma experiência de usuário fluida e visualmente impactante, permitindo aos usuários explorar coleções, verificar a programação de eventos e obter informações práticas de visitação.
 
 ### Principais Funcionalidades
 

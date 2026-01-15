@@ -11,7 +11,7 @@ const About = () => {
                         <div className="image-overlay rounded-2xl overflow-hidden shadow-2xl">
                             <img
                                 src={aboutData.image}
-                                alt="Museu do Legado"
+                                alt="Museu dos Legados"
                                 className="w-full h-full object-cover"
                                 style={{ minHeight: '500px' }}
                             />

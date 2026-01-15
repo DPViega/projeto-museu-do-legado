@@ -13,7 +13,7 @@ const Collections = ({ onArtworkClick }) => {
     return (
         <section id="colecoes" className="section-padding-large bg-light dark:bg-slate-800 transition-colors duration-300">
             <div className="container-custom">
-                <div className="grid md:grid-cols-5 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
                     <div className="md:col-span-2 slide-in-left">
                         <h2 className="section-title text-dark dark:text-white">{collectionsData.title}</h2>
                         <p className="body-text mb-6 dark:text-gray-300">{collectionsData.description}</p>
