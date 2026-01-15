@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Museu do Legado
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Museu do Legado** é uma aplicação web interativa dedicada a preservar histórias geracionais através de experiências culturais imersivas. O projeto apresenta um design moderno, responsivo e rico em animações, oferecendo aos visitantes uma prévia digital do acervo e das atividades do museu.
 
-## Available Scripts
+## 📖 Sobre o Projeto
 
-In the project directory, you can run:
+Este site serve como a vitrine digital para o Museu do Legado. Ele foi desenvolvido com foco em uma experiência de usuário fluida e visualmente impactante, permitindo aos usuários explorar coleções, verificar a programação de eventos e obter informações práticas de visitação.
 
-### `npm start`
+### Principais Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Experiência Visual Imersiva**: Design moderno com animações suaves de entrada e transições de página.
+- **Tema Claro/Escuro**: Suporte completo a alternância de temas (Light/Dark Mode) para melhor acessibilidade e conforto visual.
+- **Galeria Interativa**: Visualização de coleções de arte com recurso de Lightbox para detalhes em alta resolução.
+- **Seção de Eventos**: Calendário e listagem de eventos culturais e exposições.
+- **Integração Social**: Seção dedicada para exibir conteúdo e links do Instagram do museu.
+- **Informações Práticas**: Cards com horários, preços e mapa de localização.
+- **Design Responsivo**: Layout totalmente adaptável para dispositivos móveis, tablets e desktops.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tecnologias Utilizadas
 
-### `npm test`
+O projeto foi construído utilizando tecnologias modernas de desenvolvimento web:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **[React](https://react.dev/)**: Biblioteca JavaScript para construção da interface.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Framework de utilitários para estilização rápida e responsiva.
+- **[Radix UI](https://www.radix-ui.com/)**: Componentes acessíveis e sem estilo para base da interface (Dialogs, Tooltips, etc).
+- **[Lucide React](https://lucide.dev/)**: Biblioteca de ícones leve e consistente.
+- **[React Router](https://reactrouter.com/)**: Gerenciamento de rotas da aplicação.
+- **Craco**: Configuração avançada par o Create React App (CRA).
 
-### `npm run build`
+## 📦 Como Rodar o Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para executar este projeto localmente, siga os passos abaixo:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pré-requisitos
+Certifique-se de ter o **Node.js** e o **npm** (ou yarn) instalados em sua máquina.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Instalação
 
-### `npm run eject`
+1. Clone o repositório (ou baixe os arquivos):
+   ```bash
+   git clone <URL-DO-REPOSITORIO>
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Acesse a pasta do projeto:
+   ```bash
+   cd museu-legacy-frontend
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Execução
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Para iniciar o servidor de desenvolvimento:
 
-## Learn More
+```bash
+npm start
+# ou
+yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+O projeto será aberto automaticamente no seu navegador em `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Estrutura do Projeto
 
-### Code Splitting
+A estrutura principal do código fonte está organizada da seguinte maneira:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── layout/          # Componentes de estrutura (Header, Footer)
+│   ├── sections/        # Seções da página principal (Hero, About, etc.)
+│   └── ...              # Outros componentes de UI (Lightbox, Modal)
+├── data/                # Dados mockados para exibição (eventos, coleções)
+├── pages/               # Páginas da aplicação (Home.jsx)
+├── styles/              # Arquivos de estilo globais
+├── utils/               # Funções utilitárias
+└── App.js               # Componente raiz
+```
 
-### Analyzing the Bundle Size
+## 📝 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto é desenvolvido por **GC Cultural**. Todos os direitos reservados.
