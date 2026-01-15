@@ -8,7 +8,7 @@ const Header = ({ headerScrolled, theme, toggleTheme }) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['inicio', 'sobre', 'experiencias', 'colecoes', 'eventos', 'instagram', 'contato'];
+            const sections = ['inicio', 'sobre', 'experiencias', 'colecoes', 'eventos', 'instagram'];
             const current = sections.find(section => {
                 const element = document.getElementById(section);
                 if (element) {
@@ -44,7 +44,7 @@ const Header = ({ headerScrolled, theme, toggleTheme }) => {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-8">
-                        {['inicio', 'sobre', 'experiencias', 'colecoes', 'eventos', 'contato'].map((section) => (
+                        {['inicio', 'sobre', 'experiencias', 'colecoes', 'eventos'].map((section) => (
                             <button
                                 key={section}
                                 onClick={() => handleNavClick(section)}
@@ -87,7 +87,7 @@ const Header = ({ headerScrolled, theme, toggleTheme }) => {
             {mobileMenuOpen && (
                 <div className="md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 absolute top-20 left-0 right-0 shadow-lg fade-in-up">
                     <nav className="flex flex-col p-4 space-y-4">
-                        {['inicio', 'sobre', 'experiencias', 'colecoes', 'eventos', 'contato'].map((section) => (
+                        {['inicio', 'sobre', 'experiencias', 'colecoes', 'eventos'].map((section) => (
                             <button
                                 key={section}
                                 onClick={() => handleNavClick(section)}

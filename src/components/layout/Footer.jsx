@@ -56,7 +56,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-gray-100 dark:border-gray-800 pt-8 text-center text-sm text-gray-500 dark:text-gray-600">
-                    <p>Copyright © 2026 Museu dos Legados | Desenvolvido por GC Cultural</p>
+                    <p>Copyright © 2026 Museu dos Legados | Desenvolvido por Grupo 7 - GC Cultural</p>
                 </div>
             </div>
         </footer>
