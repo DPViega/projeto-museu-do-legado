@@ -6,10 +6,9 @@ const Hero = () => {
     return (
         <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
             <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed"
                 style={{
                     backgroundImage: `url(${heroData.backgroundImage})`,
-                    backgroundAttachment: 'fixed'
                 }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-purple-900/60 via-purple-800/70 to-blue-900/80" />

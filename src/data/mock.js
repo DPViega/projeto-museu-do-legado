@@ -3,7 +3,7 @@
 export const heroData = {
   title: "Museu dos Legados",
   subtitle: "A Arte de contar histórias geracionais através de Experiências Imersivas Sensoriais",
-  backgroundImage: "https://images.unsplash.com/photo-1554907984-15263bfd63bd?q=80&w=2400&auto=format&fit=crop"
+  backgroundImage: "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?q=80&w=2400&auto=format&fit=crop"
 };
 
 export const aboutData = {
