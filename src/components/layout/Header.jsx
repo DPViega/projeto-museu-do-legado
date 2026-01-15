@@ -85,7 +85,7 @@ const Header = ({ headerScrolled, theme, toggleTheme }) => {
 
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div className="md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 absolute top-20 left-0 right-0 shadow-lg fade-in-up">
+                <div className="md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 absolute top-20 left-0 right-0 shadow-lg">
                     <nav className="flex flex-col p-4 space-y-4">
                         {['inicio', 'sobre', 'experiencias', 'colecoes', 'eventos'].map((section) => (
                             <button
