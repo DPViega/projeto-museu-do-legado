@@ -33,9 +33,7 @@ const Collections = ({ onArtworkClick }) => {
                             ))}
                         </div>
 
-                        <button className="btn-outlined">
-                            Ver Catálogo Completo
-                        </button>
+
                     </div>
 
                     <div className="md:col-span-3 slide-in-right">
